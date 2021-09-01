@@ -1,6 +1,7 @@
 import './App.css';
 import { useState } from 'react'
 
+
 import Navbar from './Navbar'
 import LoadingScreen from './LoadingScreen'
 import Landing from './Landing'
@@ -30,18 +31,20 @@ import HowTwo from './How/HowTwo'
 import End from './How/End'
 
 export default function App() {
-  const [scene, setScene] = useState("4A")
-  const [transport, setTransport] = useState("")
+  const [timerPlay, setTimerPlay] = useState(false)
+  const [scene, setScene] = useState("4Aa")
+  const [transport, setTransport] = useState("bus")
   return (
     <div className="App">
-        { scene !== "0" ? <Navbar setScene={setScene}/> : null}
+        
+        { scene !== "0" ? <Navbar setScene={setScene} timerPlay={timerPlay}/> : null}
         <div className="anatomy-background-1"></div>
         { scene === "0" ? <LoadingScreen setScene={setScene} /> : null }
         { scene === "1" ? <Landing setScene={setScene} /> : null }
 
         {/* WHAT */}
         { scene === "3" ? <BusOrTram setScene={setScene} setTransport={setTransport} /> : null }
-        { scene === "4" ? <Collapse setScene={setScene} /> : null }
+        { scene === "4" ? <Collapse setScene={setScene} setTimerPlay={setTimerPlay} /> : null }
           { scene === "4A" ? <TimerEnd setScene={setScene} transport={transport} /> : null }
             { scene === "4Aa" ? <BystanderEffect setScene={setScene} transport={transport} /> : null}
           { scene === "4B" ? <TooEarlyCompressions setScene={setScene} /> : null }
@@ -51,7 +54,7 @@ export default function App() {
           { scene === "5A" ? <InitialVitalsAgain setScene={setScene} /> : null }
           { scene === "5B" ? <EarlyCompressions setScene={setScene} /> : null }
           { scene === "5C" ? <EarlyBreaths setScene={setScene} /> : null }
-        { scene === "6" ?  <CallHelp setScene={setScene} /> : null }
+        { scene === "6" ?  <CallHelp setScene={setScene} transport={transport}/> : null }
           { scene === "6A" ? <CallHelpWrong setScene={setScene} /> : null }
 
         {/* WHY */}

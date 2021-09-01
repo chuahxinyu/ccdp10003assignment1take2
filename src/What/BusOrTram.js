@@ -5,11 +5,14 @@ import FadeIn from 'react-fade-in'
 export default function BusOrTram({ setScene, setTransport }) {
     return (
         <div className="container">
+            <div className="question">
+                <h2>What kind of game is this?</h2>
+            </div>
             <div className="bustram-background"></div>
             {/* <div className="overlay"></div> */}
             <div className="narration">
                 <Typical 
-                    steps={["a game that revolves around choice", 2000]}
+                    steps={["A game that revolves around choice", 2000]}
                     loop={1}
                     wrapper="p" 
                 />

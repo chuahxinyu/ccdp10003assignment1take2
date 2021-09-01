@@ -1,22 +1,22 @@
-## WHAT
+
 - [ ] 0. LoadingScreen
-- [ ] 1. Landing
-- [ ] 2. LandingOverlay
+- [x] 1. Landing
+- [x] 2. LandingOverlay
   - section: what
   - narration: An action-adventure game in which the player is put into emergency medical situations and applies first aid to help others
-- [ ] 3. BusOrTram
+- [x] 3. BusOrTram
   - narration: A game that revolves around choice
   - story: You are taking the [bus / tram, setTransport] on your way to work
-- [ ] 4. Collapse
+- [x] 4. Collapse
   - narration: where every second counts
   - story: You hear a loud thus behind you. Someone has collapsed onto the floor. What do you do?
   - [4A. TimerEnd / 4B. TooEarlyCompresisons / 4C. TooEarlyBreaths / 4D. TooEarlyCallHelp / 5. InitialVitals, setScene]
 - [ ] 4A. TimerEnd
-  - narration: and not choosing is an option too (albeit, probably not the best one)
-  - story: you start backing away from the situation and so does everyone around you. Surely, someone on the {transport} will do something... Last chance, will that someone be you?
-  - [4. Yes / 4A. TimerEnd or No, setScene]
-- [ ] 4Aa. BystanderEffect
-  - narration: a game that gives players freedom for trial and error
+  - narration: and every scenario is one that can and does happen in reality
+  - story: you start backing away from the situation and so does everyone around you. Surely, someone on the {transport} will do something... right?
+  - [4Aa. Yea]
+- [x] 4Aa. BystanderEffect
+  - narration: but unlike reality, gives players freedom for trial, error and an opportunity to learn
   - story: The Bystander Effect. Thousands of lives are lost due to this phenomenon, including the person who collapsed in your {transport} ride.
   - [4. Rewind Time]
 - [ ] 4B. TooEarlyCompressions
@@ -33,7 +33,7 @@
 - [ ] 4Ca. TooEarlyBreaths
 - [ ] 4Da. TooEarlyCallHelp
 - [ ] 5. InitialVitals
-  - narration: every scenario is one that can happen in our real lives
+  - narration: and every scenario is one that can happen in our real lives
   - story: You establish that the person is unconscious and not breathing. What do you do next?
   - [5Aa. InitialVitalsAgain / 5Ba. EarlyCompresisons / 5Ca. EarlyBreaths / 5Da. EarlyCallHelp / 6. CallHelp]
 - [ ] 5Aa. InitialVitalsAgain
@@ -55,14 +55,36 @@
   - narration: 
 - [ ] 6b. 
 ## WHY
-- [ ] 7a. ChestCompressions
-  - narration: 
-  - story: 
-- [ ] 8. RescueBreaths
-- [ ] 9. CheckVitals
-- [ ] 10. AmbulanceArrives
+- [ ] 7. PreCPR
+  - narration: less than 50% of most populations know CPR
+  - story: do you know CPR?
+    - yes
+    - no
+  - [ ] 7A. PreCPRA
+    - narration: a game that makes us realise how much we really know (or rather, how much we don't)
+    - story: How many chest compressions should you do? And how many rescue breaths should you give?
+      - answer: 30
+      - the number of chest compresisons to rescue breaths is 30-2
+  - [ ] 7B. PreCPR
+    - narration: a smaller proportion knows the actual pace for CPR
+    - story: How fast should the chest compressions be?
+      - answer: 100 - 120 BPM
+      - many songs...
+  - [ ] 7C. PreCPR
+    - narration: <same>
+    - story: How deep should you press down on each chest compression?
+      - 5 to 6 cm (2 to 2.5 inches)
+
+- [ ] 8. ChestCompressions
+  - 30 chest compressions at 100-120 BPM
+- [ ] 9. RescueBreaths
+  - 2 rescue breaths - 80-100%
+- [ ] 10. CheckVitals
+  - not breathing and unresponsive
+
+- [ ] 11. AmbulanceArrives
 ## HOW
-- [ ] 11. Summary
+- [ ] 12. Summary
   - narration
     - so you get the gist of it now - this is a game
       - about choice
@@ -71,12 +93,12 @@
   - story
     - now you must be wondering how to one can move forward with this amazing concept and make it come to life
     - [12. Yes / 12. Heck Yes!]
-- [ ] 12. HowOne
-- [ ] 13. HowTwo
-- [ ] 14. End
+- [ ] 13. HowOne
+- [ ] 14. HowTwo
+- [ ] 15. End
   - finally, if you'd like to learn more about first aid or about games that inspired this one, check out the references
   - [15. Check out the references / 15. No thanks]
-- [ ] 15. References
+- [ ] 16. References
   - yea, well, I spent a lot of time on this so here they are anyways
   - References
   - Footer
@@ -98,4 +120,7 @@
 - funny, how it's a necessity for us to 'find the area under graphs', be able to recite the process of photosynthesis and remember the birthdates of historical figures yet, when faced with situations that require just basic first aid, most of us will freeze and have no idea what to do (or even worse, act on the premise of false information).
 
 - i think you said to put something in my submission to make you mark it - but im not really sure if you said that so can I just clarify ig you actually said that 
-- "Please let David mark this"
+- "Please let David mark this, thank you!"
+
+
+- in the actual game, you would be able to choose different actions and carry them out, bringing you on separate storylines with different outcomes. But I didn't have to time to come up with storylines, (I have other subjects too, David), so here is a punishment message that wastes your time everytime you get something wrong.
