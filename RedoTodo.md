@@ -1,0 +1,101 @@
+## WHAT
+- [ ] 0. LoadingScreen
+- [ ] 1. Landing
+- [ ] 2. LandingOverlay
+  - section: what
+  - narration: An action-adventure game in which the player is put into emergency medical situations and applies first aid to help others
+- [ ] 3. BusOrTram
+  - narration: A game that revolves around choice
+  - story: You are taking the [bus / tram, setTransport] on your way to work
+- [ ] 4. Collapse
+  - narration: where every second counts
+  - story: You hear a loud thus behind you. Someone has collapsed onto the floor. What do you do?
+  - [4A. TimerEnd / 4B. TooEarlyCompresisons / 4C. TooEarlyBreaths / 4D. TooEarlyCallHelp / 5. InitialVitals, setScene]
+- [ ] 4A. TimerEnd
+  - narration: and not choosing is an option too (albeit, probably not the best one)
+  - story: you start backing away from the situation and so does everyone around you. Surely, someone on the {transport} will do something... Last chance, will that someone be you?
+  - [4. Yes / 4A. TimerEnd or No, setScene]
+- [ ] 4Aa. BystanderEffect
+  - narration: a game that gives players freedom for trial and error
+  - story: The Bystander Effect. Thousands of lives are lost due to this phenomenon, including the person who collapsed in your {transport} ride.
+  - [4. Rewind Time]
+- [ ] 4B. TooEarlyCompressions
+  - narration: 
+  - story: How many chest compressions should you do?
+  - [4Ba. 10 / 20 / 30 / 40]
+- [ ] 4Ba. 
+  - narration:
+  - story: 
+- [ ] 4B_. 
+  - narration: 
+  - story: You are about to do the first chest compression when, suddenly, the person jolts awake - "What are you doing?!" Maybe you should've checked if the person was conscious and/or breathing before jumping to conclusions...
+  - [4. Rewind Time]
+- [ ] 4Ca. TooEarlyBreaths
+- [ ] 4Da. TooEarlyCallHelp
+- [ ] 5. InitialVitals
+  - narration: every scenario is one that can happen in our real lives
+  - story: You establish that the person is unconscious and not breathing. What do you do next?
+  - [5Aa. InitialVitalsAgain / 5Ba. EarlyCompresisons / 5Ca. EarlyBreaths / 5Da. EarlyCallHelp / 6. CallHelp]
+- [ ] 5Aa. InitialVitalsAgain
+  - narration: a game that guides the player to make the right choices
+  - story: The person is still unconscious and breathing, you've got to act fast.
+  - [5Aa. InitialVitalsAgain / 5Ba. EarlyCompresisons / 5Ca. EarlyBreaths / 5Da. EarlyCallHelp / 6. CallHelp]
+- [ ] 5Ab. InitialVitalsAgain (x2)
+  - narration: a game that sometimes has to force the player to make the right choices
+  - story: 
+  - [5Ba. EarlyCompresisons / 5Ca. EarlyBreaths / 5Da. EarlyCallHelp / 6. CallHelp]
+- [ ] 5B. EarlyCompressions
+- [ ] 5C. EarlyBreaths
+- [ ] 5D. EarlyCallHelp
+- [ ] 6. CallHelp
+  - narration: and it helps prepare us for 
+  - story: You instruct another passenger to call
+  - [6b. 000 / 6aa. Not 000]
+- [ ] 6a. CallHelpWrong
+  - narration: 
+- [ ] 6b. 
+## WHY
+- [ ] 7a. ChestCompressions
+  - narration: 
+  - story: 
+- [ ] 8. RescueBreaths
+- [ ] 9. CheckVitals
+- [ ] 10. AmbulanceArrives
+## HOW
+- [ ] 11. Summary
+  - narration
+    - so you get the gist of it now - this is a game
+      - about choice
+      - based on real-life events
+    - and it matters because
+  - story
+    - now you must be wondering how to one can move forward with this amazing concept and make it come to life
+    - [12. Yes / 12. Heck Yes!]
+- [ ] 12. HowOne
+- [ ] 13. HowTwo
+- [ ] 14. End
+  - finally, if you'd like to learn more about first aid or about games that inspired this one, check out the references
+  - [15. Check out the references / 15. No thanks]
+- [ ] 15. References
+  - yea, well, I spent a lot of time on this so here they are anyways
+  - References
+  - Footer
+
+- while you're busy saving someone's life, let's go through why this game matters (if it hasn't already been glaringly obvious)
+
+- hundreds of thousands of people die every year from circumstances that could have been saved with first aid
+- yet, fewer than one in five of us knows even basic first aid
+- < 50% of most populations know how to perform CPR
+- about 10% of people know the correct pace for perfroming CPR compressions
+- about 90% of people who have an out-of-hospital cardiac arrest die due to this fact
+- CPR is just one of many life-saving skills that can save hundred of thousands of lives
+
+- hopefully, now you'll be part of the 50% who are willing to do bystander-CPR
+- but you probably won't because even people who have taken a first aid course forget the information or go blank when an actual medical emergency arises
+- this is due to lack of practice and recall
+- a problem that could be very easily solved by
+- if only we knew how to make people recall and remember vast amounts of information and react almost instinctually in stressful situations, right? (images of pokedex and fps pro gamers)
+- funny, how it's a necessity for us to 'find the area under graphs', be able to recite the process of photosynthesis and remember the birthdates of historical figures yet, when faced with situations that require just basic first aid, most of us will freeze and have no idea what to do (or even worse, act on the premise of false information).
+
+- i think you said to put something in my submission to make you mark it - but im not really sure if you said that so can I just clarify ig you actually said that 
+- "Please let David mark this"
