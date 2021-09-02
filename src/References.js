@@ -11,7 +11,7 @@ export default function References() {
             <h2>That Has Ever Existed</h2>
             <div className="divider"></div>
             <div className="narration-light">
-                <p>You are lead here regardless of what you have chosen beause I put too much work into this for no one to see it and you should always fact-check information you get from a sketchy website pitch.</p>
+                <p>You are led here regardless of what you have chosen because I put too much work into this for no one to see it and you should always fact-check information you get from a sketchy website pitch.</p>
             </div>
             <div className="divider"></div>
             <h2><u>Games References</u></h2>

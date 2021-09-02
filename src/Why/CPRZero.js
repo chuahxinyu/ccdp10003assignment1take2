@@ -14,6 +14,7 @@ export default function CPROne({ setScene }) {
                 <h2>Why does this game matter?</h2>
             </div>
 
+
             { (!compressionPass) ?
                 <CompressionsOne setCompressionPass={setCompressionPass}/>
             : null}
@@ -36,8 +37,8 @@ export default function CPROne({ setScene }) {
                     <FadeIn delay="2000">
                         <div className="">
                             <p>The person is still unconscious and not breathing.</p>
-                            <div className="story-choice active" onClick={()=> setScene("9") }>
-                                Start another cycle of CPR (and yea, we get it, everything can be solved with games)</div> 
+                            <div className="story-choice active" onClick={()=> setScene("8") }>
+                                Start another cycle of CPR</div> 
                         </div>
                     </FadeIn>
                 </div>
