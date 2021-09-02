@@ -36,7 +36,7 @@ export default function TimerEnd({ setScene, transport }) {
             </div>
             <div className="narration">
                 <Typical 
-                    steps={["every situation is one that can and does happen in reality", 2000]}
+                    steps={["Every situation is one that can and does happen in reality", 2000]}
                     loop={1}
                     wrapper="p" 
                 />

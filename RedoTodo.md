@@ -33,7 +33,7 @@
 - [ ] 4Ca. TooEarlyBreaths
 - [ ] 4Da. TooEarlyCallHelp
 - [ ] 5. InitialVitals
-  - narration: and every scenario is one that can happen in our real lives
+  - narration: and every scenario is one that can happen in our own lives
   - story: You establish that the person is unconscious and not breathing. What do you do next?
   - [5Aa. InitialVitalsAgain / 5Ba. EarlyCompresisons / 5Ca. EarlyBreaths / 5Da. EarlyCallHelp / 6. CallHelp]
 - [ ] 5Aa. InitialVitalsAgain
@@ -54,33 +54,47 @@
 - [ ] 6a. CallHelpWrong
   - narration: 
 - [ ] 6b. 
-## WHY
+
 - [ ] 7. PreCPR
-  - narration: less than 50% of most populations know CPR
-  - story: do you know CPR?
-    - yes
-    - no
+  - narration: a game that makes us realise how much we really know
+  - shards:
+    - < 50% of most populations know CPR
+    - CPR can increase survival by up to 3X
+  - story: How many chest compressions and rescue breaths should you give?
+    - 30 - 2
   - [ ] 7A. PreCPRA
-    - narration: a game that makes us realise how much we really know (or rather, how much we don't)
-    - story: How many chest compressions should you do? And how many rescue breaths should you give?
-      - answer: 30
-      - the number of chest compresisons to rescue breaths is 30-2
-  - [ ] 7B. PreCPR
-    - narration: a smaller proportion knows the actual pace for CPR
+    - narration: or rather, how much we don't really know
+    - shards:
+      - < 10% of people can are able to perform CPR at the correct rate
+      - depth 5cm
+      - songs
     - story: How fast should the chest compressions be?
       - answer: 100 - 120 BPM
-      - many songs...
-  - [ ] 7C. PreCPR
-    - narration: <same>
-    - story: How deep should you press down on each chest compression?
-      - 5 to 6 cm (2 to 2.5 inches)
-
-- [ ] 8. ChestCompressions
+## WHY
+- [ ] 8. CPR
   - 30 chest compressions at 100-120 BPM
 - [ ] 9. RescueBreaths
   - 2 rescue breaths - 80-100%
 - [ ] 10. CheckVitals
   - not breathing and unresponsive
+
+- while you're busy saving someone's life, let's go through why this game matters (if it hasn't already been glaringly obvious)
+
+- hundreds of thousands of people die every year from circumstances that could have been saved with first aid
+- yet, fewer than one in five of us knows even basic first aid
+- < 50% of most populations know how to perform CPR
+- about 10% of people know the correct pace for perfroming CPR compressions
+- about 90% of people who have an out-of-hospital cardiac arrest die due to this fact
+- CPR is just one of many life-saving skills that can save hundred of thousands of lives
+
+- hopefully, now you'll be part of the 50% who are willing to do bystander-CPR
+- but you probably won't because even people who have taken a first aid course forget the information or go blank when an actual medical emergency arises
+- this is due to lack of practice and recall
+- a problem that could be very easily solved by
+- if only we knew how to make people recall and remember vast amounts of information and react almost instinctually in stressful situations, right? (images of pokedex and fps pro gamers)
+- funny, how it's a necessity for us to 'find the area under graphs', be able to recite the process of photosynthesis and remember the birthdates of historical figures yet, when faced with situations that require just basic first aid, most of us will freeze and have no idea what to do (or even worse, act on the premise of false information).
+
+
 
 - [ ] 11. AmbulanceArrives
 ## HOW
@@ -103,24 +117,9 @@
   - References
   - Footer
 
-- while you're busy saving someone's life, let's go through why this game matters (if it hasn't already been glaringly obvious)
 
-- hundreds of thousands of people die every year from circumstances that could have been saved with first aid
-- yet, fewer than one in five of us knows even basic first aid
-- < 50% of most populations know how to perform CPR
-- about 10% of people know the correct pace for perfroming CPR compressions
-- about 90% of people who have an out-of-hospital cardiac arrest die due to this fact
-- CPR is just one of many life-saving skills that can save hundred of thousands of lives
-
-- hopefully, now you'll be part of the 50% who are willing to do bystander-CPR
-- but you probably won't because even people who have taken a first aid course forget the information or go blank when an actual medical emergency arises
-- this is due to lack of practice and recall
-- a problem that could be very easily solved by
-- if only we knew how to make people recall and remember vast amounts of information and react almost instinctually in stressful situations, right? (images of pokedex and fps pro gamers)
-- funny, how it's a necessity for us to 'find the area under graphs', be able to recite the process of photosynthesis and remember the birthdates of historical figures yet, when faced with situations that require just basic first aid, most of us will freeze and have no idea what to do (or even worse, act on the premise of false information).
-
-- i think you said to put something in my submission to make you mark it - but im not really sure if you said that so can I just clarify ig you actually said that 
-- "Please let David mark this, thank you!"
 
 
 - in the actual game, you would be able to choose different actions and carry them out, bringing you on separate storylines with different outcomes. But I didn't have to time to come up with storylines, (I have other subjects too, David), so here is a punishment message that wastes your time everytime you get something wrong.
+
+- "Please let David mark this."

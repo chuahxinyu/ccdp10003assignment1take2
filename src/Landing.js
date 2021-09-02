@@ -64,16 +64,18 @@ export default function Landing({ setScene }) {
       </FadeIn> */}
 
 
-      <FadeIn delay="6000" transitionDuration="2000">
         <div className="next">
             <FaAngleRight className="btn" onClick={() => setClicked(clicked + 1)}/>
         </div>
-      </FadeIn>
 
       { clicked === 1 ? 
       <div className="oneliner-overlay">
+        <div className="question" style={{marginTop:"25vh"}}>
+          <h2>What kind of game is this?</h2>
+        </div>
         <div className="center">
-          <h2 className="oneline-overlay-text">An action-adventure game in which the player is put into emergency medical situations and applies first aid to help others.</h2>
+        
+          <h2 className="oneline-overlay-text">A first-person action-adventure game in which the player is put into emergency medical situations and applies first aid to help others.</h2>
         </div>
       </div> : null }
       { clicked === 2 ? setScene("3") : null }

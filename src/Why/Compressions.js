@@ -1,17 +1,20 @@
 import React, { useState, useEffect } from 'react'
 import { findRegressionLine } from './LinearRegression';
 import { FaAngleLeft, FaUndo, FaAngleRight } from 'react-icons/fa'
+import Typical from 'react-typical'
+import FadeIn from 'react-fade-in'
 
-export default function ChestCompressions({ setScene }) {
+
+
+
+
+export default function Compressions({ setCompressionPass, setOne }) {
     const RESET_TIME = 30000;
 
     const [taps, setTaps] = useState([])
     const [startTime, setStartTime] = useState(null)
     const [bpmCount, setBPMCount] = useState('0')
     const [resetTimerId, setResetTimerId] = useState(null)
-
-    const [showAnswerOne, setShowAnswerOne] = useState(false)
-    const [showAnswerTwo, setShowAnswerTwo] = useState(false)
 
     useEffect(() => {}, []);
 
@@ -30,6 +33,7 @@ export default function ChestCompressions({ setScene }) {
         setTaps([...taps, [tapsCount, timeDiff]]);
         setBPMCount(calculateBPM(taps));
         startResetTimer();
+        setOne(false);
     }
 
     const handleReset = () => {
@@ -59,38 +63,47 @@ export default function ChestCompressions({ setScene }) {
     }
 
     return (
-       <div className="container">
+        <div>
             <div className="chest-compressions-background"></div>
             <div className="overlay"></div>
-            
-            <div className="story">
-                <h2 style={{fontSize: "1.5em"}}>how many chest compressions should you give? <span className="showanswer" onClick={() => setShowAnswerOne(!showAnswerOne)}><u>[{showAnswerOne ? 'hide' : 'show'} answer]</u></span>
-                </h2>
-                <p style={{fontSize: "3em"}}>{taps.length} <span className={`${showAnswerOne ? 'show' : 'hide'}`}>/ 30</span></p>
-                <h2 style={{fontSize: "1.5em"}}>how fast should the chest compressions? (BPM = beats per minute) <span className="showanswer" onClick={() => setShowAnswerTwo(!showAnswerTwo)}><u>[{showAnswerTwo ? 'hide' : 'show'} answer]</u></span></h2>
-                <p style={{fontSize: "3em"}}>{bpmCount} <span className={`${showAnswerTwo ? 'show' : 'hide'}`}>/ 100</span> BPM</p>
-                <div style={{paddingTop: "40px"}}></div>
-                <div className={`circle noselect ${taps.length>=30 ? 'correct' : 'active'}`} onClick={handleTap}>
-                    <div className="circle-text"><h2>TAP</h2></div>
+            <p>START CHEST COMPRESSIONS</p>
+            <p>by tapping on the button below</p>
+            <div className="compressions-container">
+                <div className="compressions-display">
+                    <p style={{color: "grey"}}>COUNT</p>
+                    <h2 className="compressions-display-text">{taps.length}<span className="explanation"><p>/30</p></span></h2>
                 </div>
-            </div>
-            <div style={{padding: "10px"}}></div> 
-            <div className="prologue-content">
-                <h2 className="explanation">The beats of these popular songs can help you keep rhythm when doing CPR: Eye of the Tiger (Survivor), Stayin' Alive (Bee Gees), Uptown Funk (Mark Ronson, Bruno Mars), Everybody (Backstreet Boys) and hundreds more.</h2>
-            </div>
+                
+                { taps.length < 30 ? 
+                <div className={`circle noselect active`} onClick={handleTap}>
+                    <div className="circle-text"><h2>{`TAP`}</h2></div>
+                </div>
+                : null}
 
-            <div className="reset">
-                <FaUndo className="btn" onClick={handleReset} />
-            </div>
+                { taps.length >= 30 && (bpmCount < 100 || bpmCount > 120) ?
+                <div>
+                    <div className="reset">
+                        <FaUndo className="btn" onClick={handleReset} />
+                    </div>
+                    <p className="explanation"> please make sure that your chest compressions are within 100-120 beats per minute</p>
+                </div>
+                : null}
 
-            <div className="prev">
-                <FaAngleLeft className="btn" onClick={() => setScene(3)}/>
-            </div>
+                { (taps.length >= 30 && 100 <= bpmCount && bpmCount <= 120) ?
+                <div className={`circle noselect active correct`} onClick={ () => setCompressionPass(true) }>
+                    <div className="circle-text"><h2>RESCUE BREATHS</h2></div>
+                </div>
+                : null }
 
-            <div className={`next ${taps.length>=30 ? 'show' : 'hide'}`}>
-                <FaAngleRight className="btn" onClick={() => setScene(5)}/>
+                <div className="compressions-display">
+                    <p style={{color: "grey"}}>BPM</p>
+                    <h2 className="compressions-display-text">{bpmCount}<span className="explanation"><p>/100-120</p></span></h2>
+                </div>
+                
             </div>
-
-       </div>
+            <div style={{paddingTop:"10px"}}></div>
+            
+            
+        </div>
     )
 }
