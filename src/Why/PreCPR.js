@@ -12,7 +12,7 @@ export default function PreCPR({ setScene }) {
             </div>
             <div className="narration">
                 <Typical 
-                    steps={["A game that makes us realise how much we really know"]}
+                    steps={["which makes us realise how much we actually know"]}
                     loop={1}
                     wrapper="p" 
                 />
@@ -43,8 +43,9 @@ export default function PreCPR({ setScene }) {
                             <div className="form-element">
                                 <label className="form-label">Rescue Breaths</label>
                             </div>
-                            
+                            <br></br>
                         </div>
+                        { (compressionAnswer !== 0 && breathAnswer !== 0) ? <div className="explanation">The ratio of chest compressions to rescue breaths in CPR is 30:2</div> : null }
                        { (compressionAnswer === '30' && breathAnswer === '2') ? <div className="story-choice active" onClick={()=>{setScene("7A")}}>Continue</div> : null }
                     </form>
                 </div>

@@ -15,7 +15,7 @@ export default function CallHelp({ setScene, transport, setPunishmentOpen }) {
             </div>
             <div className="narration">
                 <Typical 
-                    steps={["and every scenario is one that can happen in our own lives.", 2000]}
+                    steps={["Every scenario is one that can and does happen in reality", 2000]}
                     loop={1}
                     wrapper="p" 
                 />

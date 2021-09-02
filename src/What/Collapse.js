@@ -3,7 +3,7 @@ import Typical from 'react-typical'
 import FadeIn from 'react-fade-in'
 
 
-export default function Collapse({ setScene, setTimerPlay, transport, setPunishmentOpen }) {
+export default function Collapse({ setScene, transport, setPunishmentOpen }) {
     const [isOneActive, setIsOneActive] = useState(true)
     const [isTwoActive, setIsTwoActive] = useState(true)
     const [isThreeActive, setIsThreeActive] = useState(true)
@@ -19,13 +19,13 @@ export default function Collapse({ setScene, setTimerPlay, transport, setPunishm
             
             <div className="narration">
                 <Typical 
-                    steps={["with each one bringing you down a different path."]}
+                    steps={["with each one teaching the player new first aid concepts by simulating scenarios"]}
                     loop={1}
                     wrapper="p" 
                 />
             </div>
             <div className="divider"></div>
-            <FadeIn delay="1500" transitionDuration="1000">
+            <FadeIn delay="3500" transitionDuration="1000">
                 <div className="story">
                     <p className="story-text">You hear a loud thud behind you. Someone has collapsed onto the floor. What do you do?</p>
                     <div className="story-choices-container">
@@ -39,7 +39,7 @@ export default function Collapse({ setScene, setTimerPlay, transport, setPunishm
                             <p>start giving mouth-to-mouth rescue breaths</p>
                         </div>
 
-                        <div className={`story-choice active`} onClick={() => { setScene("5"); setTimerPlay(true) }}>
+                        <div className={`story-choice active`} onClick={() => { setScene("5") }}>
                             <p>check if the person is conscious and/or breathing</p>
                         </div>
 

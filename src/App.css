@@ -39,6 +39,14 @@
 
 /* GLOBAL */
 
+.footer{
+  position: absolute;
+  left: 0;
+  width: 100vw;
+  padding: 20px;
+  background-color: rgba(39, 2, 2, 0.843);
+}
+
 body {
   width: 100vw;
   height: 100vh;
@@ -60,12 +68,12 @@ h2 {
   font-family: 'Hina Mincho', serif;
   font-size: 2em;
   color: rgba(209, 178, 178, 0.377);
-  margin-left: 5%;
+  /* margin-left: 5%; */
 }
 
 h3 {
   font-family: 'Teko', sans-serif;
-  font-size: 4em;
+  font-size: 6em;
   text-align: center;
   color: rgba(255, 255, 255, 0.842);
   /* text-shadow:  0 0 5px rgb(0, 0, 0); */
@@ -86,11 +94,30 @@ a {
   text-decoration: inherit; /* no underline */
 }
 
+.stage-display {
+  color: rgba(173, 173, 173, 0.589);
+  position: fixed;
+  top: 5px;
+  left: 5px;
+}
 
 /* BACKGROUNDS */
 
+.backkground {
+  position: absolute;
+  top: -150px;
+  width: 100vw;
+  height: 250vh;
+  left: 0;
+  overflow-x: hidden;
+  background-image: url('./backgrounds/BackgroundCompressed.png');
+  background-size: cover;
+  z-index: -100;
+}
+
 .anatomy-background-1 {
   position: absolute;
+  top: 0;
   width: 100vw;
   height: 100vh;
   left: 0;
@@ -191,9 +218,24 @@ a {
   z-index: -100;
 }
 
+.why-overlay {
+  top: 0;
+  left: 0;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background-color:rgba(32, 37, 4, 0.589);
+  z-index: -100;
+}
+
+.tooltip {
+  font-family: 'Kreon', serif;
+  font-size: 1.2em !important;;
+}
+
 .choices-img-1 {
-  top: 40%;
-  left: 30%;
+  top: 30%;
+  left: 25%;
   width: 10%;
   height: auto;
   position: fixed;
@@ -217,7 +259,7 @@ a {
 }
 
 .choices-img-3 {
-  top: 10%;
+  top: 0%;
   left: 60%;
   width: 10%;
   height: auto;
@@ -231,7 +273,7 @@ a {
 .choices-img-4 {
   bottom: 0%;
   left: 40%;
-  width: 3%;
+  width: 6%;
   height: auto;
   position: fixed;
   z-index: -1;
@@ -245,7 +287,7 @@ a {
 .choices-img-5 {
   bottom: 10%;
   left: 10%;
-  width: 10%;
+  width: 15%;
   height: auto;
   position: fixed;
   z-index: -1;
@@ -269,7 +311,7 @@ a {
 .choices-img-7 {
   bottom: 5%;
   right: 5%;
-  width: 20%;
+  width: 30%;
   height: auto;
   position: fixed;
   z-index: -1;
@@ -278,70 +320,92 @@ a {
   animation-iteration-count: 1;
 }
 
-.noani-img-1 {
-  top: 40%;
-  left: 30%;
+.pitch-img-1 {
+  top: 30%;
+  left: 25%;
   width: 10%;
   height: auto;
   position: fixed;
-  z-index: -1;
+  z-index: 0;
+  animation-name: fadein;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
   -webkit-filter: blur(0.5px); /* Safari 6.0 - 9.0 */
   filter: blur(0.5px);
 }
 
-.noani-img-2 {
+.pitch-img-2 {
   top: 10%;
+  left: 0;
   width: 20%;
   height: auto;
   position: fixed;
-  z-index: -1;
+  z-index: 0;
+  animation-name: fadein;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
 }
 
-.noani-img-3 {
-  top: 10%;
+.pitch-img-3 {
+  top: 0%;
   left: 60%;
   width: 10%;
   height: auto;
   position: fixed;
-  z-index: -1;
+  z-index: 0;
+  animation-name: fadein;
+  animation-duration: 3.5s;
+  animation-iteration-count: 1;
 }
 
-.noani-img-4 {
+.pitch-img-4 {
   bottom: 0%;
   left: 40%;
-  width: 3%;
+  width: 6%;
   height: auto;
   position: fixed;
-  z-index: -1;
+  z-index: 0;
+  animation-name: fadein;
+  animation-duration: 4.5s;
+  animation-iteration-count: 1;
   -webkit-filter: blur(1px); /* Safari 6.0 - 9.0 */
   filter: blur(1px);
 }
 
-.noani-img-5 {
+.pitch-img-5 {
   bottom: 10%;
   left: 10%;
-  width: 10%;
+  width: 15%;
   height: auto;
   position: fixed;
-  z-index: -1;
+  z-index: 0;
+  animation-name: fadein;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
 }
 
-.noani-img-6 {
+.pitch-img-6 {
   top: 20%;
   right: -5%;
   width: 30%;
   height: auto;
   position: fixed;
-  z-index: -1;
+  z-index: 0;
+  animation-name: fadein;
+  animation-duration: 2.5s;
+  animation-iteration-count: 1;
 }
 
-.noani-img-7 {
+.pitch-img-7 {
   bottom: 5%;
   right: 5%;
-  width: 20%;
+  width: 30%;
   height: auto;
   position: fixed;
-  z-index: -1;
+  z-index: 0;
+  animation-name: fadein;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
 }
 
 @keyframes floating {
@@ -430,6 +494,16 @@ a {
   text-shadow:  0 0 5px #fff;
   font-size: 1.5em;
 }
+.narration-light p {
+  font-family: 'Special Elite', cursive;
+  color: rgba(255, 255, 255, 0.747);
+  font-size: 1.2em;
+}
+
+.narration h2 {
+  color: white;
+  text-shadow:  0 0 5px #fff;
+}
 
 .narration-why p {
   font-family: 'Special Elite', cursive;
@@ -446,10 +520,15 @@ a {
   border-color: rgba(122, 118, 118, 0.726);
 }
 
+.story {
+  z-index: 10;
+}
+
 .story-text{
   /* font-family: 'Hina Mincho', serif; */
   font-size: 2em;
   color: white;
+  
   /* text-shadow:  0 0 5px #fff; */
   /* color:rgba(201, 201, 201, 0.775); */
 }
@@ -537,11 +616,11 @@ a {
 }
 
 .punishment-popup {
-  width: 80%;
-  height: 80%;
+  width: 100%;
+  height: 100%;
   padding: 30px;
-  top: 10%;
-  left: 10%;
+  top:0;
+  left:0;
   background:rgba(64, 7, 7, 0.945);
   z-index: 100000000;
   position: fixed;
@@ -760,6 +839,7 @@ a {
   position: fixed;
   top: 10px;
   right: 50%;
+  z-index: 1;
 }
 
 .question {

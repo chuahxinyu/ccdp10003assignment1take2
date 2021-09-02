@@ -5,7 +5,7 @@ import LandingModel from "./LandingModel"
 import Loading from "./Loading";
 import * as THREE from "three";
 import { FaAngleRight } from 'react-icons/fa'
-import FadeIn from 'react-fade-in'
+import ReactTooltip from "react-tooltip";
 
 function Rig() {
     const { camera, mouse } = useThree();
@@ -64,21 +64,9 @@ export default function Landing({ setScene }) {
       </FadeIn> */}
 
 
-        <div className="next">
-            <FaAngleRight className="btn" onClick={() => setClicked(clicked + 1)}/>
-        </div>
-
-      { clicked === 1 ? 
-      <div className="oneliner-overlay">
-        <div className="question" style={{marginTop:"25vh"}}>
-          <h2>What kind of game is this?</h2>
-        </div>
-        <div className="center">
-        
-          <h2 className="oneline-overlay-text">A first-person action-adventure game in which the player is put into emergency medical situations and applies first aid to help others.</h2>
-        </div>
-      </div> : null }
-      { clicked === 2 ? setScene("3") : null }
+      <div className="next">
+        <FaAngleRight className="btn" onClick={() => setScene("2")}/>
+      </div>
     </div>
   )
 }

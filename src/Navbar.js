@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import { FaBars } from 'react-icons/fa'
 
 
@@ -19,35 +19,37 @@ export default function Navbar({ setScene, setTimerPlay, setKey }) {
               setTimerPlay(false);
             }}
           >
-            start
+            1. start
           </div>
         
         
         <div
           className="navbar-item"
           onClick={() => {
-            setScene("3");
+            setScene("2");
           }}
         >
-          what
+          2. what
         </div>
         <div
           className="navbar-item"
           onClick={() => {
-            setScene("8");
+            setScene("7B");
           }}
         >
-          why
+          7. why
         </div>
         <div
           className="navbar-item"
           onClick={() => {
-            setScene("11");
+            setScene("9");
           }}
         >
-          how
+          9. how
         </div>
-        <div className="navbar-item">end</div>
+        <div className="navbar-item" onClick={() => {
+            setScene("10");
+          }}>10. end</div>
       </div>
       :null }
         

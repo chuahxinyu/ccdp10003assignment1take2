@@ -28,7 +28,10 @@ export default function PreCPRA({ setScene }) {
                             <div className="form-element">
                                 <label className="form-label">BPM (Beats per Minute)</label>
                             </div>
+                            
                         </div>
+                        <br></br>
+                        { (speedAnswer !== 0 ) ? <div className="explanation">Chest compressions should be given at a rate between 100-120 beats per minute</div> : null }
                        { (100 <= speedAnswer && speedAnswer <= 120) ? <div className="story-choice active" onClick={()=>{setScene("7B")}}>Continue</div> : null }
                     </form>
                 </div>

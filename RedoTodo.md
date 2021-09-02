@@ -123,3 +123,7 @@
 - in the actual game, you would be able to choose different actions and carry them out, bringing you on separate storylines with different outcomes. But I didn't have to time to come up with storylines, (I have other subjects too, David), so here is a punishment message that wastes your time everytime you get something wrong.
 
 - "Please let David mark this."
+
+- Short list of additional notes:
+  - I am a horrible coder so the fonts might not be completely consistent throughout the pitch and some animations feel choppy but this was the best that I could do with the skillset I have
+  - the 'pitch dialogue' gets more informal as the pitch progresses akin to how I became more sleep deprived as I was writing it

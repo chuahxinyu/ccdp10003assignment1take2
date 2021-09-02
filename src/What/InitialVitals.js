@@ -17,7 +17,7 @@ export default function InitialVitals({ setScene, setPunishmentOpen }) {
             
             <div className="narration">
                 <Typical 
-                    steps={["Every second counts", 3000]}
+                    steps={["essentially creating a process of learning through play/practice.", 3000]}
                     loop={1}
                     wrapper="p" 
                 />
