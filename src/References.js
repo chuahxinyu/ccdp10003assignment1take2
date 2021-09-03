@@ -47,6 +47,10 @@ export default function References() {
             <p>The Guardian. <i>Lack of first aid skills endangers up to 150,000 lives</i>. (12 Apr 2010).</p>
             <br></br>
             <p>The American College of Emergency Physicians. <i>First Aid Manual</i>. (2014). 5th Edition. ISBN: 978-1-4654-1950-7</p>
+
+            <h2><u>Background Music</u></h2>
+            <br></br>
+            <p><i>Alan</i> (from <i>The Imitation Game</i> soundtrack) by Alexandre Desplat</p>
             
 
             <div className="divider"></div>

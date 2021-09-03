@@ -14,6 +14,7 @@ export default function Navbar({ setScene, setTimerPlay, setKey, setIsPlaying, i
           onClick={() => {
             setIsPlaying(!isPlaying)
           }}
+          
         >
           {!isPlaying?
           <FaVolumeMute />

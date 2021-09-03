@@ -63,7 +63,7 @@ export default function Landing({ setScene }) {
         </div>
       </FadeIn> */}
 
-
+      
       <div className="next">
         <FaAngleRight className="btn" onClick={() => setScene("2")}/>
       </div>
