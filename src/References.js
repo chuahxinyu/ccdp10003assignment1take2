@@ -30,6 +30,7 @@ export default function References() {
             <p><a href="https://store.steampowered.com/app/852220/Accident/" target="_blank" rel="noreferrer">Accident (2020) by Duality Games, Glob Games Studio</a></p>
             <br></br>
 
+            <br></br>
             <h2><u>First Aid References</u></h2>
             <br></br>
             <p>Arbon, P., Hayes, J. and Woodman, R. (2011). <i>First Aid and Harm Minimization for Victims of Road Trauma: A Population Study. Prehospital and disaster medicine.</i> http://dx.doi.org/10.1017/S1049023X11006522</p>
@@ -48,15 +49,16 @@ export default function References() {
             <br></br>
             <p>The American College of Emergency Physicians. <i>First Aid Manual</i>. (2014). 5th Edition. ISBN: 978-1-4654-1950-7</p>
 
+            <br></br>
             <h2><u>Background Music</u></h2>
             <br></br>
-            <p><i>Alan</i> (from <i>The Imitation Game</i> soundtrack) by Alexandre Desplat</p>
+            <p><i>The Imitation Game</i> soundtrack by Alexandre Desplat</p>
             
 
             <div className="divider"></div>
             <div className="narration-light">
                 <Typical 
-                    steps={["You're still here?", 3000, "It's over.", 3000, "Go home.", 3000]}
+                    steps={["You're still here?", 1500, "It's over.", 1500, "Go home.", 1500]}
                     loop={Infinity}
                     wrapper="p" 
                 />

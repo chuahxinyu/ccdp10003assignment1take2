@@ -22,7 +22,6 @@ export default function PreCPRB({setScene}) {
                     <p className="story-text">Are you ready to start CPR?</p>
                     <div className="story-choices-container">
                         <div className="story-choice active" onClick={()=>{setScene("8")}}>Yes</div>
-                        <div className="story-choice active" onClick={()=>{setScene("8")}}>HECK YES</div>
                     </div>
                 </div>
             </FadeIn>

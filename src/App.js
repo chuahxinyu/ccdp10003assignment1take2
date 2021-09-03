@@ -47,7 +47,7 @@ import { CountdownCircleTimer } from "react-countdown-circle-timer"
 import PunishmentOne from "./PunishmentOne"
 
 // import Sound from 'react-sound'
-import Soundtrack from './TheImitationGameSoundtrack.mp3'
+import Soundtrack from './CarrotsAndPeas.mp3'
 
 function RenderTime({ remainingTime }) {
   const currentTime = useRef(remainingTime)

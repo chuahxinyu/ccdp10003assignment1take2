@@ -8,7 +8,6 @@
 - [Live Demo](#live-demo)
 - [Installation](#installation)
 - [Technologies Used](#technologies-used)
-- [TODO List and Content](#todo-list-and-content)
 - [Assignment Information](#assignment-information)
 - [Development Log](#development-log)
 
@@ -33,12 +32,11 @@
   - [`react-router`](https://reactrouter.com/web/guides/quick-start) for routing between prologue and home, and between the prologue stages
   - [`react-icons`](https://react-icons.github.io/react-icons) to use font awesome icons (prologue buttons)
   - [`react-typical`](https://github.com/catalinmiron/react-typical) to create text typing animation ('Why' section)
-  - [`react-countdown-cricle-timer`](https://github.com/vydimitrov/react-countdown-circle-timer)
+  - [`react-countdown-cricle-timer`](https://github.com/vydimitrov/react-countdown-circle-timer) for the 600second/10minute timer
+  - [`react-tooltip`](https://github.com/wwayne/react-tooltip) for hover tooltips
 - Other Software
   - `Blender` to create the 3D model
   - `Inkscape` to create 2D graphics
-
-## [TODO List and Content](TodoListAndContent.md)
 
 ## [Assignment Information](AssignmentInfo.md)
 
