@@ -109,6 +109,9 @@ export default function CompressionsOne({ setCompressionPass }) {
                             </div> */}
                             <br></br>
                             <p className="explanation">(click the reset button below if you want to try again)</p>
+                            <div className="story-choice active" onClick={ () => setCompressionPass(true) }>
+                                RESCUE BREATHS
+                            </div>
                             <div className="reset">
                                 <FaUndo className="btn" onClick={handleReset} />
                             </div>

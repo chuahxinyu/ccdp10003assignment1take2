@@ -37,6 +37,7 @@ export default function BreathsOne({ setBreathsPass }) {
             <FadeIn delay="2000">
                 <div className="story">
                     <p className="story-text">CONTINUE RESCUE BREATHS</p>
+                    <p>by long-pressing on the button below</p>
                     <h2 className="compressions-display-text">{breaths}</h2>
                     <div style={{paddingTop: "20px"}}></div>
                     <div className="breath-bar-border">

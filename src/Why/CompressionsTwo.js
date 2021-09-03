@@ -99,7 +99,10 @@ export default function CompressionsTwo({ setCompressionPass }) {
                         <div>
                             <p className="explanation">make sure your compressions are between 100-120BPM (try singing a song like Stayin' Alive (by Bee Gees) to help you stay on tempo)</p>
                             <br></br>
-                            <p className="explanation">(click the reset button below)</p>
+                            <p className="explanation">(click the reset button below if you want to try again)</p>
+                            <div className="story-choice active" onClick={ () => setCompressionPass(true) }>
+                                RESCUE BREATHS
+                            </div>
                             <div className="reset">
                                 <FaUndo className="btn" onClick={handleReset} />
                             </div>
