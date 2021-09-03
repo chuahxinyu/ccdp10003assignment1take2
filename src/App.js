@@ -102,13 +102,6 @@ const useAudio = url => {
     [playing]
   );
 
-  // useEffect(() => {
-  //   audio.addEventListener('ended', () => setPlaying(false));
-  //   return () => {
-  //     audio.removeEventListener('ended', () => setPlaying(false));
-  //   };
-  // }, []);
-
   return [playing, toggle];
 };
 
@@ -272,7 +265,7 @@ export default function App() {
         </div>
       ) : null}
 
-      {!noNav.includes(scene) ? (
+      {scene !== "0" ? (
         <Navbar
           setScene={setScene}
           timerPlay={timerPlay}
