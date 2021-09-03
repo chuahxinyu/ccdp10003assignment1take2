@@ -442,9 +442,33 @@ a {
   top: 0;
   position: fixed;
   background-color:rgba(39, 2, 2, 0.843);
-  animation-name: fadein;
-  animation-duration: 2s;
-  animation-iteration-count: 1;
+  text-align: center;
+  padding-top: 10%;
+}
+
+.oneliner-overlay.landing:hover {
+  cursor: pointer;
+}
+
+.overlay-instructions-container {
+  background-color: rgba(49, 11, 11, 0.849);
+  width: vw;
+  height: 80vh;
+  margin-top: 10vh;
+  margin-left: 10vw;
+  padding: 10%;
+  z-index: 1000000000000000;
+  position: fixed;
+  text-align: center;
+}
+
+.overlay-instructions {
+  display: flex;
+  justify-content: space-around;
+}
+
+.overlay-instructions-col {
+  padding-top: 10%;
 }
 
 .oneline-overlay-text {
@@ -579,7 +603,6 @@ a {
   bottom: 3%;
   right: 3%;
   transform: scale(3);
-  z-index: 1000000;
 }
 
 .prev {
@@ -838,8 +861,9 @@ a {
   position: fixed;
   /* background: rgb(78,0,0); */
   /* background: linear-gradient(rgb(36, 1, 1),  rgba(255,0,0,0)); */
-  z-index: 100;
+  z-index: 1000000;
   justify-content: space-around;
+  text-align: center;
 }
 
 .navbar-item {

@@ -18,11 +18,40 @@ function Rig() {
     );
   }
 
-export default function Landing({ setScene }) {
-  const [clicked, setClicked] = useState(0)
+export default function Landing({ setScene, isPlaying, setIsPlaying }) {
+  const [click, setClick] = useState(false)
+  function handleClick () {
+    setClick(true)
+    if (!isPlaying) {
+      setIsPlaying(true)
+    }
+  }
 
   return (
     <div className="landing" >
+      {click ? <div className="oneliner-overlay landing" onClick={()=> setScene("2")}>
+      <h2 className="story-text" style={{fontSize: "3em"}}>For the best viewing experience:</h2>
+        <div className="overlay-instructions">
+          
+          <div className="overlay-instructions-col">
+            <p style={{fontSize: "2em"}}>1. Press `F11` to make the browser full-screen</p>
+          </div>
+          <div className="overlay-instructions-col">
+            <p style={{fontSize: "2em"}}>2. And make sure that your volume is turned on</p>
+          </div>
+        </div>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <p className="explanation">click anywhere to continue</p>
+        
+      </div> : null}
+      
       <div className="anatomy-background-1"></div>
       {/* 3D CANVAS */}
       <Canvas linear frameloop="demand">
@@ -57,15 +86,8 @@ export default function Landing({ setScene }) {
         <p>learn how to save a life</p>
       </div>
 
-      {/* <FadeIn>
-        <div className="overlay-screen">
-          <p>An action-adventure game in which the player is put into emergency medical situations and applies first aid to help others.</p>
-        </div>
-      </FadeIn> */}
-
-      
       <div className="next">
-        <FaAngleRight className="btn" onClick={() => setScene("2")}/>
+        <FaAngleRight className="btn" onClick={handleClick}/>
       </div>
     </div>
   )

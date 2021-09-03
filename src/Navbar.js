@@ -3,7 +3,7 @@ import { FaBars, FaVolumeMute, FaVolumeUp } from 'react-icons/fa'
 
 export default function Navbar({ setScene, setTimerPlay, setKey, setIsPlaying, isPlaying }) {
   
-  const [showMore, setShowMore] = useState(true)
+  const [showMore, setShowMore] = useState(false)
   return (
     <div className="navbar">
       { showMore ? 

@@ -43,31 +43,31 @@ import CPROne from "./Why/CPROne";
 import CPRTwo from "./Why/CPRTwo";
 import References from "./References"
 
-import { CountdownCircleTimer } from "react-countdown-circle-timer";
-import PunishmentOne from "./PunishmentOne";
+import { CountdownCircleTimer } from "react-countdown-circle-timer"
+import PunishmentOne from "./PunishmentOne"
 
 // import Sound from 'react-sound'
 import Soundtrack from './TheImitationGameSoundtrack.mp3'
 
 function RenderTime({ remainingTime }) {
-  const currentTime = useRef(remainingTime);
-  const prevTime = useRef(null);
-  const isNewTimeFirstTick = useRef(false);
-  const [, setOneLastRerender] = useState(0);
+  const currentTime = useRef(remainingTime)
+  const prevTime = useRef(null)
+  const isNewTimeFirstTick = useRef(false)
+  const [, setOneLastRerender] = useState(0)
 
   if (currentTime.current !== remainingTime) {
-    isNewTimeFirstTick.current = true;
-    prevTime.current = currentTime.current;
-    currentTime.current = remainingTime;
+    isNewTimeFirstTick.current = true
+    prevTime.current = currentTime.current
+    currentTime.current = remainingTime
   } else {
-    isNewTimeFirstTick.current = false;
+    isNewTimeFirstTick.current = false
   }
 
   // force one last re-render when the time is over to tirgger the last animation
   if (remainingTime === 0) {
     setTimeout(() => {
-      setOneLastRerender((val) => val + 1);
-    }, 20);
+      setOneLastRerender((val) => val + 1)
+    }, 20)
   }
 
   const isTimeUp = isNewTimeFirstTick.current;
@@ -90,33 +90,33 @@ function RenderTime({ remainingTime }) {
 }
 
 const useAudio = url => {
-  const [audio] = useState(new Audio(url));
-  const [playing, setPlaying] = useState(false);
-  audio.loop = true;
+  const [audio] = useState(new Audio(url))
+  const [playing, setPlaying] = useState(false)
+  audio.loop = true
 
-  const toggle = () => setPlaying(!playing);
+  const toggle = () => setPlaying(!playing)
 
   useEffect(() => {
-      playing ? audio.play() : audio.pause();
+      playing ? audio.play() : audio.pause()
     },
     [playing]
   );
 
-  return [playing, toggle];
+  return [playing, toggle]
 };
 
 export default function App() {
-  const [key, setKey] = useState(0);
-  const [timerPlay, setTimerPlay] = useState(false);
-  const [scene, setScene] = useState("1");
-  const [transport, setTransport] = useState("bus");
-  const [isPlaying, setIsPlaying] = useAudio(Soundtrack);
+  const [key, setKey] = useState(0)
+  const [timerPlay, setTimerPlay] = useState(false)
+  const [scene, setScene] = useState("1")
+  const [transport, setTransport] = useState("bus")
+  const [isPlaying, setIsPlaying] = useAudio(Soundtrack)
 
-  const noNav = ["0", "1"];
-  const hasChoiceBackground = ["3", "4"];
-  const hasScenarioBackground = ["5", "6", "7", "7A", "7B"];
-  const hasKnowBackground = [];
-  const [isPunishmentOpen, setPunishmentOpen] = useState(false);
+  const noNav = ["0", "1"]
+  const hasChoiceBackground = ["3", "4"]
+  const hasScenarioBackground = ["5", "6", "7", "7A", "7B"]
+  const hasKnowBackground = []
+  const [isPunishmentOpen, setPunishmentOpen] = useState(false)
 
   return (
     <div className="App">
@@ -277,7 +277,7 @@ export default function App() {
       ) : null}
 
       {scene === "0" ? <LoadingScreen setScene={setScene} /> : null}
-      {scene === "1" ? <Landing setScene={setScene} /> : null}
+      {scene === "1" ? <Landing setScene={setScene} setIsPlaying={setIsPlaying} isPlaying={isPlaying} /> : null}
 
       {/* WHAT */}
       {scene === "2" ? <PitchInANutshell setScene={setScene} /> : null}
