@@ -63,17 +63,17 @@ export default function CompressionsTwo({ setCompressionPass }) {
             { 0 < taps.length && taps.length < 5 ?
                 <p>Clearly, factual accuracy is extremely important for this game</p>
             : null }
-            { 5 <= taps.length && taps.length < 15 ?
+            { 5 <= taps.length && taps.length < 13 ?
                 <p>as creating a game that disseminates false information is <i>much worse</i> than not making a game at all</p>
             : null }
-            { 15 <= taps.length && taps.length < 20 ?
+            { 13 <= taps.length && taps.length < 20 ?
                 <p>As such, pre-production of this game would require heavy involvement of medical professionals,</p>
             : null }
-            { 20 <= taps.length && taps.length < 27 ?
-                <p>especially emergency responders, such as first aiders, emergency medical technicians (EMT) and paramedics</p>
-            : null}
-            { 27 <= taps.length ?
+            { 20 <= taps.length && taps.length < 29 ?
                 <p>to understand what average bystanders are able to do in these types of situations and implement these actions into the game.</p>
+            : null}
+            { 29 <= taps.length ?
+                <p>Last but not least, we can't remake reality without astounding visuals, audio and electronic ones and zeroes</p>
             : null}
 
             </div>

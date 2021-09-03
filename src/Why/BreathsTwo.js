@@ -30,7 +30,7 @@ export default function BreathsOne({ setBreathsPass }) {
             <div className="breath-background"></div>
             <div className="overlay"></div>
             <div className="narration">
-                <p>And last but not least, we can't remake reality without astounding visuals, audio and electronic ones and zeroes - all of this would require no less than the usual army of talented individuals (artists, modellers, riggers, designers, animators, voice actresses/actors, sound designers, developers, writers etc.)</p>
+                <p>and all of this would require no less than the usual army of talented individuals (artists, modellers, riggers, designers, animators, voice actresses/actors, sound designers, developers, writers etc.)</p>
             </div>
             <div className="divider"></div>
 

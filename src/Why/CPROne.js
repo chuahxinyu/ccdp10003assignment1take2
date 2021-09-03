@@ -54,7 +54,7 @@ export default function CPROne({ setScene }) {
                         ></img>
                     </div>
                     <div className="narration">
-                        <p>If only we knew how to make people recall and remember vast amounts of information and react almost instinctually in stressful situations, right?</p>
+                        <p>If only we knew how to make people recall and remember vast amounts of information and react almost instinctively in stressful situations, right?</p>
                     </div>
                     <p className="explanation">(look at the shards)</p>
                     <div className="divider"></div>
