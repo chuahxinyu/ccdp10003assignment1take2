@@ -40,11 +40,8 @@
 /* GLOBAL */
 
 .footer{
-  position: absolute;
-  left: 0;
-  width: 100vw;
-  padding: 20px;
-  background-color: rgba(39, 2, 2, 0.843);
+  background-color: rgba(41, 0, 0, 0.329);
+  padding: 20px 0;
 }
 
 body {
@@ -79,10 +76,10 @@ h3 {
   /* text-shadow:  0 0 5px rgb(0, 0, 0); */
 }
 
-b {
+/* b {
   color: rgba(255, 64, 64, 0.911);
   text-shadow:  0 0 10px rgb(180, 15, 15);
-}
+} */
 
 p {
   font-family: 'Kreon', serif;
@@ -123,6 +120,18 @@ a {
   left: 0;
   overflow-x: hidden;
   background-image: url('./backgrounds/AnatomyBackground1.png');
+  background-size: cover;
+  z-index: -100;
+}
+
+.gameplay-background {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  overflow-x: hidden;
+  background-image: url('./backgrounds/GameplayBackground.jpg');
   background-size: cover;
   z-index: -100;
 }
@@ -240,22 +249,15 @@ a {
   height: auto;
   position: fixed;
   z-index: -1;
-  animation-name: fadein;
-  animation-duration: 3s;
-  animation-iteration-count: 1;
-  -webkit-filter: blur(0.5px); /* Safari 6.0 - 9.0 */
-  filter: blur(0.5px);
 }
 
 .choices-img-2 {
   top: 10%;
+  left: 0;
   width: 20%;
   height: auto;
   position: fixed;
   z-index: -1;
-  animation-name: fadein;
-  animation-duration: 5s;
-  animation-iteration-count: 1;
 }
 
 .choices-img-3 {
@@ -265,9 +267,6 @@ a {
   height: auto;
   position: fixed;
   z-index: -1;
-  animation-name: fadein;
-  animation-duration: 3.5s;
-  animation-iteration-count: 1;
 }
 
 .choices-img-4 {
@@ -277,11 +276,6 @@ a {
   height: auto;
   position: fixed;
   z-index: -1;
-  animation-name: fadein;
-  animation-duration: 4.5s;
-  animation-iteration-count: 1;
-  -webkit-filter: blur(1px); /* Safari 6.0 - 9.0 */
-  filter: blur(1px);
 }
 
 .choices-img-5 {
@@ -291,9 +285,6 @@ a {
   height: auto;
   position: fixed;
   z-index: -1;
-  animation-name: fadein;
-  animation-duration: 5s;
-  animation-iteration-count: 1;
 }
 
 .choices-img-6 {
@@ -303,9 +294,6 @@ a {
   height: auto;
   position: fixed;
   z-index: -1;
-  animation-name: fadein;
-  animation-duration: 2.5s;
-  animation-iteration-count: 1;
 }
 
 .choices-img-7 {
@@ -315,9 +303,6 @@ a {
   height: auto;
   position: fixed;
   z-index: -1;
-  animation-name: fadein;
-  animation-duration: 3s;
-  animation-iteration-count: 1;
 }
 
 .pitch-img-1 {
@@ -330,8 +315,6 @@ a {
   animation-name: fadein;
   animation-duration: 3s;
   animation-iteration-count: 1;
-  -webkit-filter: blur(0.5px); /* Safari 6.0 - 9.0 */
-  filter: blur(0.5px);
 }
 
 .pitch-img-2 {
@@ -368,8 +351,6 @@ a {
   animation-name: fadein;
   animation-duration: 4.5s;
   animation-iteration-count: 1;
-  -webkit-filter: blur(1px); /* Safari 6.0 - 9.0 */
-  filter: blur(1px);
 }
 
 .pitch-img-5 {

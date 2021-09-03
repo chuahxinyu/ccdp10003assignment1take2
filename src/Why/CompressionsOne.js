@@ -103,10 +103,10 @@ export default function CompressionsOne({ setCompressionPass }) {
 
                         { taps.length >= 30 && (bpmCount < 90 || bpmCount > 130) ?
                         <div>
-                            <p className="explanation">try to please make sure that your chest compressions are within 100-120 beats per minute to continue</p>
-                            <div className="story-choice active" onClick={ () => setCompressionPass(true) }>
+                            <p className="explanation">make sure your compressions are between 100-120BPM (try singing a song like Stayin' Alive (by Bee Gees) to help you stay on tempo)</p>
+                            {/* <div className="story-choice active" onClick={ () => setCompressionPass(true) }>
                                 RESCUE BREATHS
-                            </div>
+                            </div> */}
                             <br></br>
                             <p className="explanation">(click the reset button below if you want to try again)</p>
                             <div className="reset">

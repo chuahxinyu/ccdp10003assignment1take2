@@ -4,27 +4,30 @@ import Typical from 'react-typical'
 
 export default function References() {
     return (
-        <div className="container">
-            <div className="backkground"></div>
-            <h2>The Most Amazing</h2>
+        <div className="container" style={{padding: "5% 10%"}}>
+            {/* <div className="backkground"></div> */}
+            <h2 style={{paddingTop: "0"}}>The Most Amazing</h2>
             <h3>REFERENCE LIST</h3>
             <h2>That Has Ever Existed</h2>
+            <br></br>
             <div className="divider"></div>
             <div className="narration-light">
-                <p>You are led here regardless of what you have chosen because I put too much work into this for no one to see it and you should always fact-check information you get from a sketchy website pitch.</p>
+                <p>You are led here regardless of what you have chosen because I put too much work into this for no one to see it and you should always fact-check information you get from a sketchy website pitch :></p>
             </div>
             <div className="divider"></div>
             <h2><u>Games References</u></h2>
             <br></br>
             <p>The Last of Us (2013) by Naughty Dog</p>
             <br></br>
-            <p>The Walking Dead (2012-2014) by Telltale Games</p>
+            <p><a href="https://store.steampowered.com/app/207610/The_Walking_Dead/" target="_blank" rel="noreferrer">The Walking Dead (2012) by Telltale Games</a></p>
             <br></br>
-            <p>Life Is Strange (2015) by Dontnod Entertainment, Deck Nine</p>
+            <p><a href="https://store.steampowered.com/app/319630/Life_is_Strange__Episode_1/" target="_blank" rel="noreferrer">Life Is Strange (2015) by Dontnod Entertainment, Deck Nine</a></p>
             <br></br>
-            <p>Detroit: Become Human (2018) by Quantic Dream</p>
+            <p><a href="https://store.steampowered.com/app/1222140/Detroit_Become_Human/" target="_blank" rel="noreferrer">Detroit: Become Human (2020) by Quantic Dream</a></p>
             <br></br>
-            <p>Beyond: Two Souls (2013) by Quantic Dream</p>
+            <p><a href="https://store.steampowered.com/app/960990/Beyond_Two_Souls/" target="_blank" rel="noreferrer">Beyond: Two Souls (2020) by Quantic Dream</a></p>
+            <br></br>
+            <p><a href="https://store.steampowered.com/app/852220/Accident/" target="_blank" rel="noreferrer">Accident (2020) by Duality Games, Glob Games Studio</a></p>
             <br></br>
 
             <h2><u>First Aid References</u></h2>
@@ -54,12 +57,12 @@ export default function References() {
                     wrapper="p" 
                 />
             </div>
-            <div style={{paddingTop: "20px"}}></div>
-            <div className="footer">
-                <p>CCDP10003 Assignment 1</p>
+            <div className="divider"></div>
+
+                <p>CCDP10003 Assignment 1 by Chuah Xin Yu</p>
                 <br></br>
                 <a href="https://github.com/chuahxinyu/ccdp10003assignment1take2" target="_blank" rel="noreferrer"><FaGithub style={{transform: "scale(2)"}} /></a>
-            </div>
+            <div style={{paddingTop: "20px"}}></div>
             
         </div>
     )

@@ -19,19 +19,6 @@
   - narration: but unlike reality, gives players freedom for trial, error and an opportunity to learn
   - story: The Bystander Effect. Thousands of lives are lost due to this phenomenon, including the person who collapsed in your {transport} ride.
   - [4. Rewind Time]
-- [ ] 4B. TooEarlyCompressions
-  - narration: 
-  - story: How many chest compressions should you do?
-  - [4Ba. 10 / 20 / 30 / 40]
-- [ ] 4Ba. 
-  - narration:
-  - story: 
-- [ ] 4B_. 
-  - narration: 
-  - story: You are about to do the first chest compression when, suddenly, the person jolts awake - "What are you doing?!" Maybe you should've checked if the person was conscious and/or breathing before jumping to conclusions...
-  - [4. Rewind Time]
-- [ ] 4Ca. TooEarlyBreaths
-- [ ] 4Da. TooEarlyCallHelp
 - [ ] 5. InitialVitals
   - narration: and every scenario is one that can happen in our own lives
   - story: You establish that the person is unconscious and not breathing. What do you do next?
@@ -126,4 +113,4 @@
 
 - Short list of additional notes:
   - I am a horrible coder so the fonts might not be completely consistent throughout the pitch and some animations feel choppy but this was the best that I could do with the skillset I have
-  - the 'pitch dialogue' gets more informal as the pitch progresses akin to how I became more sleep deprived as I was writing it
+- the 'pitch dialogue' gets more informal as the pitch progresses akin to how I became more sleep deprived as I was writing it :D 

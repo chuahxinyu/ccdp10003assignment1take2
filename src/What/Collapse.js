@@ -7,6 +7,7 @@ export default function Collapse({ setScene, transport, setPunishmentOpen }) {
     const [isOneActive, setIsOneActive] = useState(true)
     const [isTwoActive, setIsTwoActive] = useState(true)
     const [isThreeActive, setIsThreeActive] = useState(true)
+    // const [otherPath, setOtherPath] = useState(false)
 
     return (
         <div className="container">
@@ -19,7 +20,7 @@ export default function Collapse({ setScene, transport, setPunishmentOpen }) {
             
             <div className="narration">
                 <Typical 
-                    steps={["with each one teaching the player new first aid concepts by simulating scenarios"]}
+                    steps={["letting you make the decisions that they had to", 3000, "but also letting you steer off into different paths"]}
                     loop={1}
                     wrapper="p" 
                 />

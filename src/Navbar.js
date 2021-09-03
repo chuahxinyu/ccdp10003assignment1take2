@@ -1,9 +1,7 @@
 import React, { useState } from "react";
-import { FaBars } from 'react-icons/fa'
+import { FaBars, FaVolumeMute, FaVolumeUp } from 'react-icons/fa'
 
-
-
-export default function Navbar({ setScene, setTimerPlay, setKey }) {
+export default function Navbar({ setScene, setTimerPlay, setKey, setIsPlaying, isPlaying }) {
   
   const [showMore, setShowMore] = useState(false)
   return (
@@ -11,16 +9,28 @@ export default function Navbar({ setScene, setTimerPlay, setKey }) {
       { showMore ? 
       <div className="navbar">
         
-          <div
-            className="navbar-item"
-            onClick={() => {
-              setScene("1");
-              setKey((prevKey) => prevKey + 1);
-              setTimerPlay(false);
-            }}
-          >
-            1. start
-          </div>
+        <div
+          className="navbar-item"
+          onClick={() => {
+            setIsPlaying(!isPlaying)
+          }}
+        >
+          {!isPlaying?
+          <FaVolumeMute />
+          : <FaVolumeUp /> }
+          
+        </div>
+
+        <div
+          className="navbar-item"
+          onClick={() => {
+            setScene("1");
+            setKey((prevKey) => prevKey + 1);
+            setTimerPlay(false);
+          }}
+        >
+          1. start
+        </div>
         
         
         <div

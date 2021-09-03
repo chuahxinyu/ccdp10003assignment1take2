@@ -2,15 +2,16 @@ import React from 'react'
 import Typical from 'react-typical'
 import FadeIn from 'react-fade-in'
 
+
 export default function TooEarlyCompressions({ setScene }) {
     return (
         <div className="container">
             <div className="question">
-                <h2>What kind of game is this?</h2>
+                <h2>What is the core gameplay?</h2>
             </div>
             <div className="narration">
                 <Typical 
-                    steps={["and different choices bring you down different paths", 2000]}
+                    steps={["but also letting you steer off into different paths", 2000]}
                     loop={1}
                     wrapper="p" 
                 />

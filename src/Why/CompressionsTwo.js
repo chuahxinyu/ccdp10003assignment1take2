@@ -97,7 +97,7 @@ export default function CompressionsTwo({ setCompressionPass }) {
 
                         { taps.length >= 30 && (bpmCount < 90 || bpmCount > 130) ?
                         <div>
-                            <p className="explanation">try to please make sure that your chest compressions are within 100-120 beats per minute to continue</p>
+                            <p className="explanation">make sure your compressions are between 100-120BPM (try singing a song like Stayin' Alive (by Bee Gees) to help you stay on tempo)</p>
                             <br></br>
                             <p className="explanation">(click the reset button below)</p>
                             <div className="reset">

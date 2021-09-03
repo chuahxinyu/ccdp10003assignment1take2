@@ -1,5 +1,5 @@
 import "./App.css";
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import ReactTooltip from "react-tooltip";
 
 import choices1 from "./images/choices1.png";
@@ -46,6 +46,9 @@ import References from "./References"
 import { CountdownCircleTimer } from "react-countdown-circle-timer";
 import PunishmentOne from "./PunishmentOne";
 
+// import Sound from 'react-sound'
+import Soundtrack from './TheImitationGameSoundtrack.mp3'
+
 function RenderTime({ remainingTime }) {
   const currentTime = useRef(remainingTime);
   const prevTime = useRef(null);
@@ -86,11 +89,35 @@ function RenderTime({ remainingTime }) {
   );
 }
 
+const useAudio = url => {
+  const [audio] = useState(new Audio(url));
+  const [playing, setPlaying] = useState(false);
+  audio.loop = true;
+
+  const toggle = () => setPlaying(!playing);
+
+  useEffect(() => {
+      playing ? audio.play() : audio.pause();
+    },
+    [playing]
+  );
+
+  // useEffect(() => {
+  //   audio.addEventListener('ended', () => setPlaying(false));
+  //   return () => {
+  //     audio.removeEventListener('ended', () => setPlaying(false));
+  //   };
+  // }, []);
+
+  return [playing, toggle];
+};
+
 export default function App() {
   const [key, setKey] = useState(0);
   const [timerPlay, setTimerPlay] = useState(false);
   const [scene, setScene] = useState("1");
   const [transport, setTransport] = useState("bus");
+  const [isPlaying, setIsPlaying] = useAudio(Soundtrack);
 
   const noNav = ["0", "1"];
   const hasChoiceBackground = ["3", "4"];
@@ -103,8 +130,9 @@ export default function App() {
       { scene !== "10" ? <div className="anatomy-background-1"></div> : null}
       { scene !== "10" ? <div className="fragments-background"></div> : null}
       
-      
+      {/* <button onClick={setIsPlaying}>{isPlaying ? "Pause" : "Play"}</button> */}
       <div className="stage-display">{scene}/10 stages</div>
+
       {!noNav.includes(scene) && scene !== "2" && scene !== "10" ? (
         <div className="timer" data-tip data-for="timerInfo">
           <CountdownCircleTimer
@@ -250,21 +278,22 @@ export default function App() {
           timerPlay={timerPlay}
           setTimerPlay={setTimerPlay}
           setKey={setKey}
+          setIsPlaying={setIsPlaying}
+          isPlaying={isPlaying}
         />
       ) : null}
 
       {scene === "0" ? <LoadingScreen setScene={setScene} /> : null}
       {scene === "1" ? <Landing setScene={setScene} /> : null}
-      {scene === "2" ? <PitchInANutshell setScene={setScene} /> : null}
 
       {/* WHAT */}
+      {scene === "2" ? <PitchInANutshell setScene={setScene} /> : null}
       {scene === "3" ? (
         <BusOrTram setScene={setScene} setTransport={setTransport} setTimerPlay={setTimerPlay}/>
       ) : null}
       {scene === "4" ? (
         <Collapse
           setScene={setScene}
-          
           setPunishmentOpen={setPunishmentOpen}
         />
       ) : null}

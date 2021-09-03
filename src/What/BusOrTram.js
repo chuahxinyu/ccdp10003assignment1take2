@@ -7,19 +7,19 @@ export default function BusOrTram({ setScene, setTransport, setTimerPlay }) {
         <div className="container">
             <div className="scene-zero-background"></div>
             <div className="question">
-                <h2>What will gameplay be like?</h2>
+                <h2>What kind of game is this?</h2>
             </div>
             <div className="bustram-background"></div>
             <div className="narration">
                 <Typical 
-                    steps={["The game is made up of multiple stories", 2000]}
+                    steps={["A game that brings you into the real-life stories of others", 2000]}
                     loop={1}
                     wrapper="p" 
                 />
             </div>
             <div className="divider"></div>
             
-            <FadeIn delay="3000" transitionDuration="1000">
+            <FadeIn delay="3500" transitionDuration="1000">
                 <div className="story">
                     <p className="story-text">You are taking the</p>
                     <div className="story-choices-container">
