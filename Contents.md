@@ -1,4 +1,4 @@
-> this is a transcript of all of the contents on the website
+> this is a transcript the 'pitch' part of the content
 
 ---
 * FIRST AID

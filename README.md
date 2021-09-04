@@ -8,27 +8,32 @@
 - [Live Demo](#live-demo)
 - [Installation](#installation)
 - [Technologies Used](#technologies-used)
-- [Assignment Information](#assignment-information)
-- [Development Log](#development-log)
+- [OTHER](#other)
+- [* Development Log](#-development-log)
 
 </details>
 
-## Live Demo
-> hosted on netlify
+## [Live Demo](https://firstaidgameconcept.netlify.app/)
+![](2021-09-04-12-49-37.png)
+
+<details>
+<summary>More screenshots</summary>
+
+![](2021-09-04-12-50-20.png)
+![](2021-09-04-12-50-48.png)
+
+</details>
+
 
 ## Installation
 1. Make sure that Node is installed on your system: [Download Node]
 2. Clone the repository (or Download the ZIP file)
-  ```
-  git clone ...
-  ```
-3. `yarn start` or `react-scripts start`
+3. Run `yarn start` or `react-scripts start`
 
 ## Technologies Used
-
 - `React`
-  - `@react-three/fiber` for displaying the 3D Landing Model
-  - `@react-three/drei` for cursor interaction with the 3D Landing Model
+  - [`@react-three/fiber`](https://docs.pmnd.rs/react-three-fiber/getting-started/introduction) for displaying the 3D Landing Model
+  - [`@react-three/drei`](https://docs.pmnd.rs/drei/introduction) for cursor interaction with the 3D Landing Model
   - [`react-router`](https://reactrouter.com/web/guides/quick-start) for routing between prologue and home, and between the prologue stages
   - [`react-icons`](https://react-icons.github.io/react-icons) to use font awesome icons (prologue buttons)
   - [`react-typical`](https://github.com/catalinmiron/react-typical) to create text typing animation ('Why' section)
@@ -38,6 +43,8 @@
   - `Blender` to create the 3D model
   - `Inkscape` to create 2D graphics
 
-## [Assignment Information](AssignmentInfo.md)
-
-## [Development Log](DevLog.md)
+---
+## OTHER
+* [Website Contents](./Contents.md)
+* [Development Log](./Devlog.md)
+---
