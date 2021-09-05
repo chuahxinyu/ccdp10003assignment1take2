@@ -44,7 +44,3 @@
   - `Inkscape` to create 2D graphics
 
 ---
-## OTHER
-* [Website Contents](./Contents.md)
-* [Development Log](./Devlog.md)
----
