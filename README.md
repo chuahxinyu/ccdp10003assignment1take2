@@ -8,19 +8,17 @@
 - [Live Demo](#live-demo)
 - [Installation](#installation)
 - [Technologies Used](#technologies-used)
-- [OTHER](#other)
-- [* Development Log](#-development-log)
 
 </details>
 
 ## [Live Demo](https://firstaidgameconcept.netlify.app/)
-![](2021-09-04-12-49-37.png)
+![](/images/2021-09-04-12-49-37.png)
 
 <details>
 <summary>More screenshots</summary>
 
-![](2021-09-04-12-50-20.png)
-![](2021-09-04-12-50-48.png)
+![](/images/2021-09-04-12-50-20.png)
+![](/images/2021-09-04-12-50-48.png)
 
 </details>
 
