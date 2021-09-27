@@ -8,6 +8,7 @@
 - [Live Demo](#live-demo)
 - [Installation](#installation)
 - [Technologies Used](#technologies-used)
+- [Future Improvements](#future-improvements)
 
 </details>
 
@@ -22,14 +23,14 @@
 
 </details>
 
-
 ## Installation
 1. Make sure that Node is installed on your system: [Download Node]
 2. Clone the repository (or Download the ZIP file)
-3. Run `yarn start` or `react-scripts start`
+3. Run `npm start` and the website should be up on `localhost:3000`
 
 ## Technologies Used
-- `React`
+- Front-End
+  - `react` and `react-dom`
   - [`@react-three/fiber`](https://docs.pmnd.rs/react-three-fiber/getting-started/introduction) for displaying the 3D Landing Model
   - [`@react-three/drei`](https://docs.pmnd.rs/drei/introduction) for cursor interaction with the 3D Landing Model
   - [`react-router`](https://reactrouter.com/web/guides/quick-start) for routing between prologue and home, and between the prologue stages
@@ -42,3 +43,17 @@
   - `Inkscape` to create 2D graphics
 
 ---
+
+## Future Improvements
+> the code for this project is atrocious cause everything was written in a span of 3 days and I barely knew the basics of React/JavaScript
+* Technical
+  * state management
+  * routing for different pages
+  * standardise function-writing format
+  * general UI improvements
+  * purge unnecesary packages
+  * component organization/map
+* Content
+  * the game concept is not as clear as it could be
+  * multiple storylines
+  * actually plan the different 
