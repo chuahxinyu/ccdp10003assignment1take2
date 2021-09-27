@@ -67,7 +67,7 @@ export default function References() {
 
                 <p>CCDP10003 Assignment 1 by Chuah Xin Yu</p>
                 <br></br>
-                <a href="https://github.com/chuahxinyu/ccdp10003assignment1take2" target="_blank" rel="noreferrer"><FaGithub style={{transform: "scale(2)"}} /></a>
+                <a href="https://github.com/chuahxinyu/firstaidgameconcept" target="_blank" rel="noreferrer"><FaGithub style={{transform: "scale(2)"}} /></a>
             <div style={{paddingTop: "20px"}}></div>
             
         </div>
