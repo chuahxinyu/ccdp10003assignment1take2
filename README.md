@@ -14,14 +14,8 @@
 
 ## [Live Demo](https://firstaidgameconcept.netlify.app/)
 ![](/images/2021-09-04-12-49-37.png)
-
-<details>
-<summary>More screenshots</summary>
-
 ![](/images/2021-09-04-12-50-20.png)
 ![](/images/2021-09-04-12-50-48.png)
-
-</details>
 
 ## Installation
 1. Make sure that Node is installed on your system: [Download Node]
