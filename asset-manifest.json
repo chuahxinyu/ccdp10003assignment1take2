@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/firstaidgame/static/css/main.8a91ece9.chunk.css",
-    "main.js": "/firstaidgame/static/js/main.ab0b40c6.chunk.js",
-    "main.js.map": "/firstaidgame/static/js/main.ab0b40c6.chunk.js.map",
+    "main.js": "/firstaidgame/static/js/main.10f7a940.chunk.js",
+    "main.js.map": "/firstaidgame/static/js/main.10f7a940.chunk.js.map",
     "runtime-main.js": "/firstaidgame/static/js/runtime-main.47aded89.js",
     "runtime-main.js.map": "/firstaidgame/static/js/runtime-main.47aded89.js.map",
     "static/js/2.de9ec2ba.chunk.js": "/firstaidgame/static/js/2.de9ec2ba.chunk.js",
@@ -42,6 +42,6 @@
     "static/js/runtime-main.47aded89.js",
     "static/js/2.de9ec2ba.chunk.js",
     "static/css/main.8a91ece9.chunk.css",
-    "static/js/main.ab0b40c6.chunk.js"
+    "static/js/main.10f7a940.chunk.js"
   ]
 }
