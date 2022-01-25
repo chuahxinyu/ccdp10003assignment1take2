@@ -7,7 +7,7 @@ import { useGLTF } from '@react-three/drei' //, useAnimations
 
 export default function Model(props) {
   const group = useRef()
-  const { nodes } = useGLTF('/LandingModel.gltf') // , materials, animations
+  const { nodes } = useGLTF('./LandingModel.gltf') // , materials, animations
   // const { actions } = useAnimations(animations, group)
   return (
     <group ref={group} {...props} dispose={null}>
