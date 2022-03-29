@@ -5,14 +5,15 @@
 <details>
 <summary>Table of Contents</summary>
 
-- [Live Demo](#live-demo)
+- [Demo](#demo)
 - [Installation](#installation)
 - [Technologies Used](#technologies-used)
 - [Future Improvements](#future-improvements)
 
 </details>
 
-## [Live Demo](https://firstaidgameconcept.netlify.app/)
+## [Demo](https://chuahxinyu.github.io/firstaidgame/)
+> * [Alternative Demo Link](https://firstaidgameconcept.netlify.app/)
 ![](/images/2021-09-04-12-49-37.png)
 ![](/images/2021-09-04-12-50-20.png)
 ![](/images/2021-09-04-12-50-48.png)
