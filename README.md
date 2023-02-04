@@ -13,7 +13,6 @@
 </details>
 
 ## [Demo](https://chuahxinyu.github.io/firstaidgame/)
-> * [Alternative Demo Link (netlify)](https://firstaidgameconcept.netlify.app/)
 
 ![](/images/2021-09-04-12-49-37.png)
 ![](/images/2021-09-04-12-50-20.png)
