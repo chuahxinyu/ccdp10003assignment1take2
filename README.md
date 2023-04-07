@@ -12,7 +12,7 @@
 
 </details>
 
-## [Demo](https://chuahxinyu.github.io/firstaidgame/)
+## [Demo](https://chuahxinyu.github.io/firstaidgameconcept/)
 
 ![](/images/2021-09-04-12-49-37.png)
 ![](/images/2021-09-04-12-50-20.png)
