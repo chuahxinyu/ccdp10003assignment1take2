@@ -1,6 +1,6 @@
 import React from 'react'
 import Typical from 'react-typical'
-import FadeIn from 'react-fade-in'
+import FadeIn from './utils/FadeIn'
 
 export default function PunishmentOne({ setPunishmentOpen }) {
     return (
