@@ -97,7 +97,7 @@ const useAudio = url => {
   useEffect(() => {
       playing ? audio.play() : audio.pause()
     },
-    [playing]
+    [audio, playing]
   );
 
   return [playing, toggle]

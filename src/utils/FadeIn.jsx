@@ -1,9 +1,4 @@
-import React, {
-  JSXElementConstructor,
-  PropsWithChildren,
-  useEffect,
-  useState,
-} from "react";
+import React, { useEffect, useState } from "react";
 
 export default function FadeIn(props) {
   const [maxIsVisible, setMaxIsVisible] = useState(0);

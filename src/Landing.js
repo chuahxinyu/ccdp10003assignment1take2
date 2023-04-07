@@ -5,7 +5,6 @@ import LandingModel from "./LandingModel"
 import Loading from "./Loading";
 import * as THREE from "three";
 import { FaAngleRight } from 'react-icons/fa'
-import ReactTooltip from "react-tooltip";
 
 function Rig() {
     const { camera, mouse } = useThree();
