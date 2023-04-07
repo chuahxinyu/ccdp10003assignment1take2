@@ -1,7 +1,7 @@
 {
-  "name": "firstaidgameconceptanddesign",
+  "name": "firstaidgameconcept",
   "version": "0.1.0",
-  "homepage": "https://chuahxinyu.github.io/firstaidgameconceptanddesign/",
+  "homepage": "https://chuahxinyu.github.io/firstaidgameconcept/",
   "private": true,
   "dependencies": {
     "@babel/core": "^7.15.0",
